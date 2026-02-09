@@ -1,60 +1,53 @@
 <!DOCTYPE html>
 <html lang="nl">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Schrijf je in voor onze nieuwsbrief">
-    <meta name="keywords" content="Nieuwsbrief">
-    <meta name="author" content="L. Hoogenboom">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="CSS/style.css">
-
     <title>Inschrijven nieuwsbrief</title>
 </head>
-
 <body>
 
-    <form method="post" action="">
-            <h1>Aanvraag nieuwsbrief</h1>
+    <form method="post" action="classes/process.php">
+        <h1>Aanvraag nieuwsbrief</h1>
 
         <table>
             <tr>
                 <td>
-                    <input type="text" name="Voornaam" placeholder="Wat is uw voornaam?" required>
+                    <input type="text" name="voornaam" placeholder="Wat is uw voornaam?" required>
                 </td>
                 <td>
-                    <input type="text" name="Tussenvoegsel" placeholder="Heeft u een tussenvoegsel>">
+                    <input type="text" name="tussenvoegsel" placeholder="Tussenvoegsel">
                 </td>
                 <td>
-                    <input type="text" name="Achternaam" placeholder="Wat is uw achternaam?" required>
+                    <input type="text" name="achternaam" placeholder="Wat is uw achternaam?" required>
                 </td>
             </tr>
 
             <tr>
                 <td colspan="2">
-                    <input type="text" name="Straat" placeholder="Wat is uw straatnaam en nummer?" required>
+                    <input type="text" name="straatnaam_nummer" placeholder="Straatnaam en nummer" required>
                 </td>
                 <td>
-                    <input type="email" name="email" placeholder="Wat is uw E-mail adres?" required>
+                    <input type="date" name="geboortedatum" required>
                 </td>
             </tr>
 
             <tr>
                 <td>
-                    <input type="text" name="Postcode" placeholder="Wat is uw postcode?" required>
+                    <input type="text" name="postcode" placeholder="Wat is uw postcode?" required>
                 </td>
                 <td>
-                    <input type="text" name="Woonplaats" placeholder="Wat is uw woonplaats?" required>
+                    <input type="text" name="woonplaats" placeholder="Wat is uw woonplaats?" required>
                 </td>
                 <td>
-                    <input type="tel" name="Telefoon" placeholder="Wat is uw telefoon nummer?" required>
+                    <input type="tel" name="telefoonnummer" placeholder="Telefoonnummer" required>
                 </td>
             </tr>
 
             <tr>
                 <td colspan="3">
-                    <input type="checkbox" id="voorwaarden" name="akkoord" required></input>
+                    <input type="checkbox" id="voorwaarden" name="akkoord" value="1" required>
                     <label for="voorwaarden">Ik ga akkoord met de voorwaarden zoals vermeld op de website.</label>
                 </td>
             </tr>
@@ -68,5 +61,4 @@
     </form>
 
 </body>
-
 </html>
